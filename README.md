@@ -1,42 +1,26 @@
 <!-- DATASET_USER_README_PLACEHOLDER: Replace all bracketed placeholders then delete this comment block. -->
 
-# Exploring Dataset [DATASET_NAME]
+# Exploring Dataset "ARM Open-Science with CRG and BSEC (MSDLive) Data"
 
-[SHORT_DATASET_DESCRIPTION]
+Notebook showing how to download and visualize data from ARM and MSDLive for the CoURAGE and BSEC campaigns.
+Corresponding Author: Adam Theisen (atheisen@anl.gov)
 
 ## Available Notebooks
 | Notebook | Purpose | Key Libraries |
 | -------- | ------- | ------------- |
-| [NOTEBOOK_1_NAME].ipynb | [NOTEBOOK_1_PURPOSE] | [PRIMARY_LIBS] |
-| (Add more rows) |  |  |
+| CRG_ARM_and_BSEC_Tutorial.ipynb | Compares ARM CRG and BSEC Doppler Lidar data  | act, xarray, numpy, matplotlib |
+
+## Prerequisites
+1. Create an ARM account ([https://adc.arm.gov/armuserreg/#/new]) if you don't already have one.
+2. Navigate to the [webservice information page](https://adc.arm.gov/armlive/) and log in to get the token used in the notebook.
 
 ## Quick Start
-1. Open a notebook.
-2. Run the first (dependency install) cell.
-3. Access data via the DATA_DIR environment variable (preferred) or /data.
-
-## Accessing the Data
-DATA_DIR points to the mounted read‑only dataset. Example (Python):
-```python
-import os, pathlib
-data_dir = pathlib.Path(os.environ["DATA_DIR"])
-print('DATA_DIR:', data_dir)
-print('Top-level files:', [p.name for p in data_dir.iterdir()][:10])
-```
-
-## Notebook Summaries
-- [NOTEBOOK_1_NAME].ipynb: [NOTEBOOK_1_PURPOSE]
-- (Add entries)
+1. Open the CRG_ARM_and_BSEC_Tutorial notebook.
+2. Edit the "Download ARM DL Data" cell to use your ARM username and token
+3. Run all cells.
 
 ## Environment & Dependencies
-See requirements.txt (Python) or notebook install cells for R / Julia.  
-Write outputs to your home directory (~/) or /tmp (dataset directory is read‑only).
-
-## Support / Contact
-Questions: [CONTACT_EMAIL_OR_LINK]
+See requirements.txt (Python) 
 
 ## General Help
 See [this documentation](https://dev.msdlive.org/dataset-notebooks) 
-
-## License / Terms
-[LICENSE_OR_TERMS]
