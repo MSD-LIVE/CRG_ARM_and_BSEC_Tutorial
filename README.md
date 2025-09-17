@@ -11,7 +11,7 @@ Corresponding Author: Adam Theisen (atheisen@anl.gov)
 | CRG_ARM_and_BSEC_Tutorial.ipynb | Compares ARM CRG and BSEC Doppler Lidar data  | act, xarray, numpy, matplotlib |
 
 ## Prerequisites
-1. Create an ARM account ([https://adc.arm.gov/armuserreg/#/new]) if you don't already have one.
+1. Create an ARM account (https://adc.arm.gov/armuserreg/#/new) if you don't already have one.
 2. Navigate to the [webservice information page](https://adc.arm.gov/armlive/) and log in to get the token used in the notebook.
 
 ## Quick Start
